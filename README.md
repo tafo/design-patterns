@@ -145,3 +145,98 @@ public class OpenClosed
     }
 }
 ```
+
+## Liskov Substitution Principle
+
+This principle emphasizes that objects of a superclass should be replaceable with objects of its subclass without affecting the correctness of the program. In simpler terms, derived classes must be substitutable for their base classes without altering the desired properties of the program. Violating this principle can lead to unexpected behavior in code that relies on polymorphism.
+
+```csharp
+public class Shape
+{
+    public virtual double Area()
+    {
+        return 0;
+    }
+}
+
+public class Rectangle : Shape
+{
+    public double Width { get; set; }
+    public double Height { get; set; }
+
+    public override double Area()
+    {
+        return Width * Height;
+    }
+}
+
+public class Square : Rectangle
+{
+    public override double Area()
+    {
+        return Width * Width; // Or Height * Height, it's the same for a square
+    }
+}
+```
+```csharp
+void SetDimensions(Rectangle rectangle, double width, double height)
+{
+    rectangle.Width = width;
+    rectangle.Height = height;
+}
+
+```
+```csharp
+
+Square square = new Square();
+SetDimensions(square, 5, 10);
+
+```
+
+```csharp
+public interface IShape
+{
+    double Area();
+}
+
+public class Rectangle : IShape
+{
+    public double Width { get; set; }
+    public double Height { get; set; }
+
+    public double Area()
+    {
+        return Width * Height;
+    }
+}
+
+public class Square : IShape
+{
+    public double SideLength { get; set; }
+
+    public double Area()
+    {
+        return SideLength * SideLength;
+    }
+}
+
+```
+```csharp
+
+void SetDimensions(IShape shape, double width, double height)
+{
+    // Check if the shape is a rectangle
+    if (shape is Rectangle rectangle)
+    {
+        rectangle.Width = width;
+        rectangle.Height = height;
+    }
+    // Check if the shape is a square
+    else if (shape is Square square)
+    {
+        square.SideLength = Math.Max(width, height); // Side length is the maximum of width or height for a square
+    }
+}
+
+```
+
