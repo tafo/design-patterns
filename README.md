@@ -240,3 +240,10 @@ void SetDimensions(IShape shape, double width, double height)
 
 ```
 
+## Interface Segregation Principle
+
+The Interface Segregation Principle suggests that clients should not be forced to depend on interfaces they do not use. Instead of creating large, monolithic interfaces, it's better to define more minor, more specific interfaces tailored to the needs of individual clients. This prevents the proliferation of unnecessary dependencies and makes systems easier to maintain and extend.
+
+## Dependency Inversion Principle
+
+The Dependency Inversion Principle advocates for high-level modules not to depend on low-level modules, but both should depend on abstractions. Additionally, it suggests that abstractions should not depend on details; instead, details should depend on abstractions. By adhering to this principle, you decouple components within a system, making it easier to replace or modify individual parts without affecting the entire system.
