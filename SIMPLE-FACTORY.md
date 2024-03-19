@@ -46,3 +46,4 @@ class Program
     }
 }
 ```
+[Back](README.md/#simple-factory)
