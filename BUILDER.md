@@ -1,5 +1,15 @@
 ## Builder Design Pattern
 
+The Builder design pattern is a creational design pattern used to construct complex objects step by step. It separates the construction of a complex object from its representation, allowing the same construction process to create different representations of the object. It is also useful when creating an object with many optional parameters or configurations. It makes the code more readable and easier to maintain. Additionally, it allows flexibility and reusability in the construction process.
+
+**Director** >>> This is responsible for orchestrating the construction process. It receives input from the client and delegates the construction steps to the builder.
+
+**Builder** >>> This defines an abstract interface for creating parts of a complex object.
+
+**Concrete Builders** >>> These are specific implementations of the Builder interface. They provide methods for building and retrieving the parts of the complex object.
+
+**Product** >>> This is the complex object being constructed.
+
 ```csharp
 using System;
 
