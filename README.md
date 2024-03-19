@@ -121,10 +121,11 @@ class Program
 
 ```
 
+## SIMPLE FACTORY PATTERN
+
 ```csharp
 using System;
 
-// SIMPLE FACTORY PATTERN
 public class VehicleFactory
 {
     public static Vehicle CreateVehicle(string vehicleType)
