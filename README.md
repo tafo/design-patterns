@@ -1,7 +1,7 @@
 # Design Patterns & Principles
 They are universally relevant architectural approaches. 
 
-## Single Responsibility
+## Single Responsibility Principle
 This principle states that a class should have only one reason to change, meaning it should have only one responsibility or job. By adhering to this principle, each class becomes focused and easier to understand, leading to better code organization and maintainability.
 
 ## Open/Closed Principle
