@@ -1,5 +1,5 @@
-# Design Patterns
-Design patterns are common architectural approaches. They are universally relevant.
+# Design Patterns & Principles
+They are universally relevant architectural approaches. 
 
 ## Single Responsibility
 This principle states that a class should have only one reason to change, meaning it should have only one responsibility or job. By adhering to this principle, each class becomes focused and easier to understand, leading to better code organization and maintainability.
@@ -20,106 +20,7 @@ The Interface Segregation Principle suggests that clients should not be forced t
 
 The Dependency Inversion Principle advocates for high-level modules not to depend on low-level modules, but both should depend on abstractions. Additionally, it suggests that abstractions should not depend on details; instead, details should depend on abstractions. By adhering to this principle, you decouple components within a system, making it easier to replace or modify individual parts without affecting the entire system.
 
-## Builder Design Pattern
-
-```csharp
-using System;
-
-// Product
-class House
-{
-    public string Foundation { get; set; }
-    public string Walls { get; set; }
-    public string Roof { get; set; }
-    public string Windows { get; set; }
-
-    public void Display()
-    {
-        Console.WriteLine($"Foundation: {Foundation}, Walls: {Walls}, Roof: {Roof}, Windows: {Windows}");
-    }
-}
-
-// Builder Interface
-interface IHouseBuilder
-{
-    void BuildFoundation();
-    void BuildWalls();
-    void BuildRoof();
-    void BuildWindows();
-    House GetHouse();
-}
-
-// Concrete Builder
-class SimpleHouseBuilder : IHouseBuilder
-{
-    private House house;
-
-    public SimpleHouseBuilder()
-    {
-        house = new House();
-    }
-
-    public void BuildFoundation()
-    {
-        house.Foundation = "Concrete";
-    }
-
-    public void BuildWalls()
-    {
-        house.Walls = "Brick";
-    }
-
-    public void BuildRoof()
-    {
-        house.Roof = "Tiles";
-    }
-
-    public void BuildWindows()
-    {
-        house.Windows = "Glass";
-    }
-
-    public House GetHouse()
-    {
-        return house;
-    }
-}
-
-// Director
-class ConstructionEngineer
-{
-    private IHouseBuilder houseBuilder;
-
-    public ConstructionEngineer(IHouseBuilder builder)
-    {
-        houseBuilder = builder;
-    }
-
-    public void ConstructHouse()
-    {
-        houseBuilder.BuildFoundation();
-        houseBuilder.BuildWalls();
-        houseBuilder.BuildRoof();
-        houseBuilder.BuildWindows();
-    }
-}
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        SimpleHouseBuilder builder = new SimpleHouseBuilder();
-        ConstructionEngineer engineer = new ConstructionEngineer(builder);
-
-        engineer.ConstructHouse();
-
-        House house = builder.GetHouse();
-        Console.WriteLine("House Constructed:");
-        house.Display();
-    }
-}
-
-```
+## [Builder Design Pattern](BUILDER.md)
 
 ## SIMPLE FACTORY PATTERN
 
