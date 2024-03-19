@@ -22,7 +22,7 @@ The Dependency Inversion Principle advocates for high-level modules not to depen
 
 ## <a id="builder"></a>[Builder Design Pattern](BUILDER.md)
 
-## <a id="simple-factory></a>[Simple Factory Pattern](SIMPLE-FACTORY.md)
+## <a id="simple-factory"></a>[Simple Factory Pattern](SIMPLE-FACTORY.md)
 
 ## <a id="factory=method"></a>[Factory Method Pattern](FACTORY-METHOD.md)
 
