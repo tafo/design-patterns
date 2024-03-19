@@ -10,7 +10,7 @@ The Open/Closed Principle states that software entities (classes, modules, funct
 
 ## Liskov Substitution Principle
 
-This principle emphasizes that objects of a superclass should be replaceable with objects of its subclass without affecting the correctness of the program. In simpler terms, derived classes must be substitutable for their base classes without altering the desired properties of the program. Violating this principle can lead to unexpected behavior in code that relies on polymorphism.
+This principle emphasizes that objects of a superclass should be replaceable with objects of its subclass without affecting the program's correctness. In simpler terms, derived classes must be substitutable for their base classes without altering the program's desired properties. Violating this principle can lead to unexpected behavior in code that relies on polymorphism.
 
 ## Interface Segregation Principle
 
