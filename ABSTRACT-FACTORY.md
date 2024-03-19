@@ -1,4 +1,7 @@
 ## Abstract Factory Design Pattern
+
+The Abstract Factory Design Pattern is a creational design pattern that provides an interface for creating families of related or dependent objects without specifying their concrete classes. It is often called a "factory of factories" because it defines an abstract factory interface with multiple factory methods, each responsible for creating different related objects.
+
 ```csharp
 using System;
 
