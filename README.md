@@ -32,4 +32,6 @@ The Dependency Inversion Principle advocates for high-level modules not to depen
 
 ## <a id="singleton"></a>[Singleton Pattern](SINGLETON.md)
 
+## <a id="adapter"></a>[Adapter Pattern](ADAPTER.md)
+
 ## <a id="bridge"></a>[Bridge Pattern](BRIDGE.md)
