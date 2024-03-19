@@ -28,4 +28,5 @@ The Dependency Inversion Principle advocates for high-level modules not to depen
 
 ## <a id="abstract-factory"></a>[Abstract Factory Pattern](ABSTRACT-FACTORY.md)
 
+## <a id="prototype"></a>[Prototype Pattern](PROTOTYPE.md)
 
