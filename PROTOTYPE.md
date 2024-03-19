@@ -1,13 +1,16 @@
 ## Prototype Design Pattern
 
+```csharp
 using System;
 
+// Prototype interface
 public interface IShape
 {
     IShape Clone();
     void Draw();
 }
 
+// Concrete prototype class for Circle
 public class Circle : IShape
 {
     public int Radius { get; set; }
@@ -21,6 +24,7 @@ public class Circle : IShape
 
     public IShape Clone()
     {
+        // Perform deep copy
         return (IShape)MemberwiseClone();
     }
 
@@ -30,6 +34,7 @@ public class Circle : IShape
     }
 }
 
+// Concrete prototype class for Rectangle
 public class Rectangle : IShape
 {
     public int Width { get; set; }
@@ -45,6 +50,7 @@ public class Rectangle : IShape
 
     public IShape Clone()
     {
+        // Perform deep copy
         return (IShape)MemberwiseClone();
     }
 
@@ -54,13 +60,16 @@ public class Rectangle : IShape
     }
 }
 
+// Client code
 class Program
 {
     static void Main(string[] args)
     {
+        // Create prototypes
         Circle circlePrototype = new Circle(10, "red");
         Rectangle rectanglePrototype = new Rectangle(20, 30, "blue");
 
+        // Clone and modify prototypes
         Circle clonedCircle = (Circle)circlePrototype.Clone();
         clonedCircle.Color = "green";
         clonedCircle.Draw();
@@ -71,3 +80,5 @@ class Program
         clonedRectangle.Draw();
     }
 }
+```
+[Back](README.md/#prototype)
