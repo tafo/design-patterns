@@ -30,3 +30,4 @@ The Dependency Inversion Principle advocates for high-level modules not to depen
 
 ## <a id="prototype"></a>[Prototype Pattern](PROTOTYPE.md)
 
+## <a id="singleton"></a>[Singleton Pattern](SINGLETON.md)
