@@ -1,5 +1,7 @@
 ## SIMPLE FACTORY PATTERN
 
+The Simple Factory Pattern, or the Static Factory Pattern, is a creational design pattern that provides a simple way to encapsulate the instantiation logic of objects within a single class or method, referred to as the "factory." This factory is responsible for creating objects based on the provided input parameters, such as strings, enums, or other data.
+
 ```csharp
 using System;
 
