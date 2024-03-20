@@ -20,27 +20,28 @@ The Interface Segregation Principle suggests that clients should not be forced t
 
 The Dependency Inversion Principle advocates for high-level modules not to depend on low-level modules, but both should depend on abstractions. Additionally, it suggests that abstractions should not depend on details; instead, details should depend on abstractions. By adhering to this principle, you decouple components within a system, making it easier to replace or modify individual parts without affecting the entire system.
 
-## <a id="builder"></a>[Builder Pattern](BUILDER.md)
+## <a id="builder"></a>[Builder Pattern](Creational/BUILDER.md)
 
-## <a id="simple-factory"></a>[Simple Factory Pattern](SIMPLE-FACTORY.md)
+## <a id="simple-factory"></a>[Simple Factory Pattern](Creational/SIMPLE-FACTORY.md)
 
-## <a id="factory-method"></a>[Factory Method Pattern](FACTORY-METHOD.md)
+## <a id="factory-method"></a>[Factory Method Pattern](Creational/FACTORY-METHOD.md)
 
-## <a id="abstract-factory"></a>[Abstract Factory Pattern](ABSTRACT-FACTORY.md)
+## <a id="abstract-factory"></a>[Abstract Factory Pattern](Creational/ABSTRACT-FACTORY.md)
 
-## <a id="prototype"></a>[Prototype Pattern](PROTOTYPE.md)
+## <a id="prototype"></a>[Prototype Pattern](Creational/PROTOTYPE.md)
 
-## <a id="singleton"></a>[Singleton Pattern](SINGLETON.md)
+## <a id="singleton"></a>[Singleton Pattern](Creational/SINGLETON.md)
 
-## <a id="adapter"></a>[Adapter Pattern](ADAPTER.md)
+## <a id="adapter"></a>[Adapter Pattern](Structural/ADAPTER.md)
 
-## <a id="bridge"></a>[Bridge Pattern](BRIDGE.md)
+## <a id="bridge"></a>[Bridge Pattern](Structural/BRIDGE.md)
 
-## <a id="composite"></a>[Composite Pattern](COMPOSITE.md)
+## <a id="composite"></a>[Composite Pattern](Structural/COMPOSITE.md)
 
-## <a id="decorator"></a>[Decorator Pattern](DECORATOR.md)
+## <a id="decorator"></a>[Decorator Pattern](Structural/DECORATOR.md)
 
-## <a id="facade"></a>[Facade Pattern](FACADE.md)
+## <a id="facade"></a>[Facade Pattern](Structural/FACADE.md)
 
-## <a id="flyweight"></a>[Flyweight Pattern](FLYWEIGHT.md)
+## <a id="flyweight"></a>[Flyweight Pattern](Structural/FLYWEIGHT.md)
 
+## <a id="proxy"></a>[Proxy Pattern](Structural/PROXY.md)
