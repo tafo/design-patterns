@@ -11,7 +11,7 @@ Implement the Component interface for leaf objects. Leaf objects are the individ
 ### Composite
 Implement the Component interface for composite objects. Composite objects can contain child components, which can be either leaf objects or other composite objects.
 
-````csharp
+```csharp
 using System;
 using System.Collections.Generic;
 
