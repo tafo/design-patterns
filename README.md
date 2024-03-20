@@ -41,3 +41,6 @@ The Dependency Inversion Principle advocates for high-level modules not to depen
 ## <a id="decorator"></a>[Decorator Pattern](DECORATOR.md)
 
 ## <a id="facade"></a>[Facade Pattern](FACADE.md)
+
+## <a id="flyweight"></a>[Flyweight Pattern](FLYWEIGHT.md)
+
