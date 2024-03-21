@@ -50,4 +50,22 @@ The Dependency Inversion Principle advocates for high-level modules not to depen
 
 ## <a id="command"></a>[Command Pattern](Behavioral/COMMAND.md)
 
+## <a id="interpreter"></a>[Interpreter Pattern](Behavioral/INTERPRETER.md)
 
+## <a id="iterator"></a>[Iterator Pattern](Behavioral/ITERATOR.md)
+
+## <a id="mediator"></a>[Mediator Pattern](Behavioral/MEDIATOR.md)
+
+## <a id="memento"></a>[Memento Pattern](Behavioral/MEMENTO.md)
+
+## <a id="null"></a>[Null Object Pattern](Behavioral/NULL.md)
+
+## <a id="observer"></a>[Observer Pattern](Behavioral/OBSERVER.md)
+
+## <a id="state"></a>[State Pattern](Behavioral/STATE.md)
+
+## <a id="strategy"></a>[Strategy Pattern](Behavioral/STRATEGY.md)
+
+## <a id="template"></a>[Template Method Pattern](Behavioral/TEMPLATE.md)
+
+## <a id="visitor"></a>[Visitor Pattern](Behavioral/VISITOR.md)
