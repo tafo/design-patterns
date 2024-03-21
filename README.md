@@ -47,3 +47,7 @@ The Dependency Inversion Principle advocates for high-level modules not to depen
 ## <a id="proxy"></a>[Proxy Pattern](Structural/PROXY.md)
 
 ## <a id="chain"></a>[Chain of Responsibility Pattern](Behavioral/CHAIN.md)
+
+## <a id="command"></a>[Command Pattern](Behavioral/COMMAND.md)
+
+
