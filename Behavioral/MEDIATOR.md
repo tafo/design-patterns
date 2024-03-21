@@ -32,6 +32,7 @@ public interface ISmartDevice
 {
     string Name { get; }
     void SendMessage(string message);
+    void SetMediator(ISmartHomeMediator mediator);
 }
 
 // Concrete colleague: LightBulb
@@ -39,16 +40,23 @@ public class LightBulb : ISmartDevice
 {
     public string Name { get; }
 
+    private ISmartHomeMediator mediator;
+
     public LightBulb(string name)
     {
         Name = name;
+    }
+
+    public void SetMediator(ISmartHomeMediator mediator)
+    {
+        this.mediator = mediator;
     }
 
     public void SendMessage(string message)
     {
         Console.WriteLine($"{Name}: Sending message - {message}");
         // Simulate sending message to smart home hub
-        Mediator.SendMessage(this, message);
+        mediator.SendMessage(this, message);
     }
 }
 
@@ -57,16 +65,23 @@ public class Thermostat : ISmartDevice
 {
     public string Name { get; }
 
+    private ISmartHomeMediator mediator;
+
     public Thermostat(string name)
     {
         Name = name;
+    }
+
+    public void SetMediator(ISmartHomeMediator mediator)
+    {
+        this.mediator = mediator;
     }
 
     public void SendMessage(string message)
     {
         Console.WriteLine($"{Name}: Sending message - {message}");
         // Simulate sending message to smart home hub
-        Mediator.SendMessage(this, message);
+        mediator.SendMessage(this, message);
     }
 }
 
@@ -83,20 +98,12 @@ class Program
         ISmartDevice thermostat = new Thermostat("Living Room Thermostat");
 
         // Set the mediator for smart devices
-        SetMediator(lightBulb, smartHomeHub);
-        SetMediator(thermostat, smartHomeHub);
+        lightBulb.SetMediator(smartHomeHub);
+        thermostat.SetMediator(smartHomeHub);
 
         // Smart devices send messages
         lightBulb.SendMessage("Turn on the light");
         thermostat.SendMessage("Set temperature to 22°C");
-    }
-
-    static void SetMediator(ISmartDevice smartDevice, ISmartHomeMediator mediator)
-    {
-        // Set mediator for smart device
-        // This method can be called during initialization or configuration of smart devices
-        // to set the mediator they will use for communication.
-        Mediator = mediator;
     }
 }
 ```
